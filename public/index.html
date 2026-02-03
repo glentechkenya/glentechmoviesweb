@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>GlentechKenya Movies</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="floating-bg"></div>
+
+  <header class="topbar">
+    <div class="brand">Glentech<span>Kenya</span> Movies</div>
+    <div class="search-wrap">
+      <input id="searchInput" placeholder="Search movies, trailers, music..." />
+      <button id="searchBtn">Search</button>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="sections" id="resultsSection">
+      <h2>Search Results</h2>
+      <div id="results" class="cards"></div>
+    </section>
+
+    <section class="sections" id="latestSection">
+      <h2>Latest</h2>
+      <div id="latest" class="cards horizontal"></div>
+    </section>
+
+    <section class="sections" id="trendingSection">
+      <h2>Trending</h2>
+      <div id="trending" class="cards horizontal"></div>
+    </section>
+  </main>
+
+  <!-- Trailer modal -->
+  <div id="trailerModal" class="modal hidden">
+    <div class="modal-content">
+      <button class="close" id="closeModal">✕</button>
+      <h3 id="trailerTitle"></h3>
+      <video id="trailerPlayer" controls playsinline></video>
+      <p id="trailerDesc"></p>
+      <a id="openDetail" class="btn" target="_blank" rel="noopener">Open Detail</a>
+    </div>
+  </div>
+
+  <footer class="footer">Built by Glentech Kenya — Movies hub</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
